@@ -1,4 +1,12 @@
-// import { swiper } from "./scripts/Swiper.js";
-import { checkElWidth } from "./scripts/WidthChecker.js";
+// Swiper
+export const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
 
-checkElWidth();
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
